@@ -152,7 +152,7 @@ double MonteCarloB::getr() const
 }
 
 
-////////////////////////////////// CLASSE FILLE 1 : BROWNIEN  //////////////////////////////////////
+////////////////////////////////// CLASSE FILLE 2 : LEVY  //////////////////////////////////////
 // Classe pour simuler le cours dans le cas du modèle de Levy //
 
 MonteCarloL ::MonteCarloL(double Strike, double Expiry, double Spot, double Vol, double r, double lambda, double m, double vega2) :  m_Strike(Strike), m_Expiry(Expiry), m_Spot(Spot), m_Vol(Vol), m_r(r), m_lambda(lambda), m_m(m), m_vega2(vega2), variance(m_Vol*m_Vol*m_Expiry), Rootvariance(sqrt(variance)), m_movedSpot(m_Spot*exp(m_r*m_Expiry+demivar)), demivar(-0.5*variance), thisSpotL(1)
